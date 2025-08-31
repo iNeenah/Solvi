@@ -1,0 +1,47 @@
+/* Estilos para el Header de Solvi */
+
+/* Header fijo */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  letter-spacing: -0.02em;
+}
+
+/* Contenedor de la aplicación */
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Design - Desktop */
+@media (min-width: 1024px) {
+  .header {
+    padding: 0 60px;
+  }
+  
+  .logo {
+    font-size: 32px;
+  }
+}
